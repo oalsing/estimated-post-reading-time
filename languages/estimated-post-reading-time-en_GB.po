@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Estimated Post Reading Time\n"
+"POT-Creation-Date: 2015-03-06 10:44+0200\n"
+"PO-Revision-Date: 2015-03-06 10:44+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: lib/options.php:40
+msgid "Options saved."
+msgstr ""
+
+#: lib/options.php:53
+msgid "Estimated Post Reading Time"
+msgstr ""
+
+#: lib/options.php:55
+msgid "Settings"
+msgstr ""
+
+#: lib/options.php:60
+msgid "Words Per Minute"
+msgstr ""
+
+#: lib/options.php:64
+msgid "Show in homepage"
+msgstr ""
+
+#: lib/options.php:66 lib/options.php:73 lib/options.php:80
+msgid "Yes"
+msgstr ""
+
+#: lib/options.php:67 lib/options.php:74 lib/options.php:81
+msgid "No"
+msgstr ""
+
+#: lib/options.php:71
+msgid "Show in archives"
+msgstr ""
+
+#: lib/options.php:78
+msgid "All letters lowercase"
+msgstr ""
+
+#: lib/options.php:85
+msgid "Save Changes"
+msgstr ""
+
+#: lib/options.php:88
+msgid "Shortcode Usage"
+msgstr ""
+
+#: plugin.php:86
+msgid "less than a minute"
+msgstr ""
+
+#: plugin.php:86
+msgid "Less than a minute"
+msgstr ""
+
+#: plugin.php:90
+msgid "more than a day"
+msgstr ""
+
+#: plugin.php:90
+msgid "More than a day"
+msgstr ""
+
+#: plugin.php:93
+msgid "hours"
+msgstr ""
+
+#: plugin.php:97
+msgid "minute"
+msgstr ""
+
+#: plugin.php:100
+msgid "minutes"
+msgstr ""
