@@ -36,7 +36,7 @@ class EstimatedPostReadingTime {
 
 		//Load localisation files
 		add_action("plugins_loaded", array(&$this, "estimate_time_plugin_textdomain"));
-		
+
 		//Shortcode
 		add_action("init", array(&$this, "estimate_time_shortcode_register"));
 
@@ -45,7 +45,7 @@ class EstimatedPostReadingTime {
 		if ($show_in_posts_pages != "0") {
 			add_filter("the_content", array(&$this, "estimate_time_content_filter"));
 		}
-				
+
 		//Options Page
 		require_once( plugin_dir_path(__FILE__) . "/lib/options.php" );
 		$estimatedPostReadingTimeOptions = new EstimatedPostReadingTimeOptions();
@@ -68,10 +68,10 @@ class EstimatedPostReadingTime {
 	function estimate_time_shortcode() {
 
 		$result = false;
-		
+
 		$show_in_homepage = get_option("eprt_show_in_homepage", "0");
 		$show_in_archive = get_option("eprt_show_in_archive", "0");
-		
+
 		if ($show_in_homepage == "0" && (is_home() || is_front_page())) {
 			return $result;
 		}
@@ -82,13 +82,13 @@ class EstimatedPostReadingTime {
 
 		$wpm = get_option("eprt_words_per_minute", 250);
 		$lowercase = get_option("eprt_lowercase", "0");
-		
+
 		if (trim($wpm) == "") {
 			$wpm = "250";
 		}
 
 		global $post;
-		$content = strip_tags($post->post_content);		
+		$content = strip_tags($post->post_content);
 		$content_words = str_word_count($content);
 		$estimated_minutes = floor($content_words / $wpm);
 
@@ -111,7 +111,7 @@ class EstimatedPostReadingTime {
 		}
 
 
-		return '<div style="color: #a1a1a9;"><i>Reading time: ' . $result . '.</i></div>';
+		return '<div class="reading-time">Reading time: ' . $result . '.</div>';
 	}
 
 	function estimate_time_shortcode_register() {
