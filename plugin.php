@@ -111,7 +111,7 @@ class EstimatedPostReadingTime {
 		}
 
 
-		return '<div class="reading-time">Reading time: ' . $result . '</div>';
+		return '<div class="reading-time">Reading time: <span class="reading-time-result">' . $result . '</span></div>';
 	}
 
 	function estimate_time_shortcode_register() {
